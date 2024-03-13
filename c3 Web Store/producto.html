@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/normalizer.css">
+    <title>FronEnd Store</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="logo" src="/assets/img/logo.png" alt="Logo FronEnd">
+        </a>
+        <nav class="nav-bar">
+            <ul class="nav-bar-ul">
+                <li class="nav-bar-li">
+                    <a id="nav-bar-a1" class="nav-bar-a nav-bar-enlace-activo" href="index.html">Tienda</a>
+                </li>
+                <li class="nav-bar-li">
+                    <a id="nav-bar-a2" class="nav-bar-a" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedor-main">
+        <section class="section-contenido">
+            <h1 class="texto-nosotros">Producto</h1>
+            <div class="contenedor">
+                <div class="contenedor-producto">
+                    <div class="contenedor-img-div-xl">
+                        <img class="imagen-prod" src="/assets/img/1.jpg" alt="imagen vue">
+                    </div>
+                    <div class="contenedor-producto-compra">
+                    <p class="texto-producto">Ut diam maximus, accumsan sem a, porta mi. Sed non aliquam nisl. 
+                      Nunc vulputate purus in mattis commodo. Nullam eu faucibus nunc. 
+                      Suspendisse eu mauris ac arcu porta auctor. Donec pharetra condimentum 
+                      tellus ac varius. Phasellus iaculis ultrices sapien, vitae porttitor 
+                      metus venenatis pretium.</p>
+                      <form method="post" action="#" class="formulario">
+                        
+                            <select class="formulario-campo" title="Talla">
+                                <option class="formulario-talla-opcion" selected="" disabled="">Selecionar Talla</option>
+                                <option value="">Pequeña</option>
+                                <option value="">Mediana</option>
+                                <option value="">Grande</option>
+                              </select>
+                              <input type="number" class="formulario-campo" min="1" placeholder="1">
+                        
+                        <button type="submit" class="formulario-submit">Agregar al Carrito</button>
+                      </form>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer-producto">
+      <p class="footer-text">FRONDEND <span class="span-footer">STORE</span> - Todos los derechos reservados Febrero 2024 ©</p>
+    </footer>
+</body>
+</html>

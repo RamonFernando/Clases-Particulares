@@ -1,0 +1,245 @@
+:root{
+    /* Custon property*/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+*, *:before, *:after{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Utilidades */
+body{
+    font-size: 62.5%; /* 1rem = 10px */
+    max-width: 120rem;
+    margin: 0 auto;
+    font-family: 'Krub', sans-serif;
+    background-color: var(--grisClaro);
+    letter-spacing: 0.5px;
+}
+section{
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 2.8rem;
+    /*display: flex;
+    flex-direction: column;*/
+    flex-wrap: wrap;
+}
+h2{
+    font-size: 2.2rem;
+    padding: 0.5rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+p{
+    font-size: 1rem;
+    line-height: 2; /* inter lineado */
+}
+h1, h2, h3, p{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0.5rem 0;
+    transition: .5s;
+    width: 100%;
+    &:hover{
+        background-color: var(--primario);
+        width: 100%;
+    }
+}
+img{
+    max-width: 100%;    
+}
+/* Header */
+.titulo{
+    
+}
+.span-title{
+    font-size: 2rem;
+    text-align: center;
+}
+/* Barra Navegacion */
+.nav-bar{
+    background-color: var(--secundario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* Main */
+/* Section */
+.inicio{
+    background-image: url(/assets/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--blanco);
+    display: flex;
+    text-align: center;
+}
+.opacidad{
+    background-color: #000000af;
+    width: 100%;
+}
+.mi-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+.icon-s{
+    background-color: var(--primario);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Botones */
+.boton-contacto{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 0.7rem;
+    margin: 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition: .5s;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;/* espacio entre letras*/
+    &:hover{
+        background-color: var(--primario);
+    }
+}
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gris);
+    border-radius: 0.5rem;
+}
+.form-titulo{
+    color: var(--primario);
+    text-transform: uppercase;
+    padding: 0.9rem 0.3rem;
+}
+label{
+    font-size: 0.9rem;
+    margin: 0 0.6rem;
+    width: 100%;
+    padding: 0.4rem 1rem;
+    gap: 0.5rem;
+    font-weight: 700;
+}
+input, textarea{
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0.4rem 0.4rem;
+    margin: 0.2rem 0;
+    
+    
+    border-radius: 0.3rem;
+    border: none;
+}
+/* Footer */
+.footer{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 0.6rem;
+    margin-top: 35px;
+}
+@media (min-width: 468px) {
+    .nav-bar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contacto{
+        margin: 20px;
+    }
+    .form-contacto{
+        padding: 10px 20px;
+    }
+    
+}
+@media (min-width: 768px){ 
+    .inicio{
+        height: 50vh;
+        
+    }
+    .opacidad{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedor-servicios{
+        display: flex;
+    }
+    
+    .form-contacto-mq768px{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "nombre telefono"
+        "email email"
+        "mensaje mensaje"
+        "boton boton";
+        gap: 1rem;
+        padding: 20px;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-contacto{
+        max-width:800px;
+        
+    }
+    .label-nombre{
+        grid-area: nombre;
+    }
+    .label-telefono{
+        grid-area: telefono;
+    }
+    .label-email{
+       grid-area: email; 
+    }
+    .label-mensaje{
+        grid-area: mensaje;
+    }
+    .boton-contacto{
+        grid-area: boton;
+    }
+    label{
+        margin: 0;
+        padding: 0px;
+    }
+       
+}
+.boton-contacto{
+    max-width: 250px;
+    padding: 0.8rem 2rem;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="webp webp-alpha webp-animation webp-lossless" lang="en-es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCafé</title>
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="/assets/css/normalizer.css" as="style">
+    <link rel="stylesheet" href="/assets/css/normalizer.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- style -->
+    <link rel="preload" href="/assets/css/style.css" as="style">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header class="contenedor-header header">
+       <div class="contenedor">
+        <div class="barra">
+            <a href="index.html">
+                <h1 class="logo no-margin no-padding centrar-texto scale transition">Blog<span class="span-logo">DeCafé</span></h1>
+            </a>
+            <nav class="navbar ">
+                <a class="scalex1 transition" href="nosotros.html">Nosotros</a>
+                <a class="scalex1 transition" href="cursos.html">Cursos</a>
+                <a class="scalex1 transition" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <div class="header-texto">
+            <h2 class="no-margin no-padding centrar-texto">Blog de café con consejos y cursos</h2>
+            <p class="no-margin no-padding centrar-texto">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+       </div><!-- contenedor -->
+    </header>
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+            <!-- entrada blog 1 -->
+            <article class="entrada-blog">
+                <picture>
+                    <source loading="lazy" srcset="/assets/img/blog1.webp" type="image/webp">
+                    <img class="nuestro-blog_img max-width-100 border-radius" loading="lazy" src="/assets/img/blog1.jpg" alt="imagen blog">
+                </picture>
+                <div class="entrada-contenido">
+                    <h3>Nuestros Cursos y Talleres</h3>
+                    <h3>Tipos de granos de cafe</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo commodi 
+                        blanditiis deleniti non recusandae, ullam optio rerum, libero, possimus 
+                        quia veritatis officiis deserunt dignissimos. Sapiente facere quaerat 
+                        exercitationem unde ducimus!</p>
+                    <a href="entrada.html" class="boton boton-primario">Leer Entrada</a>
+                </div>
+            </article>
+            <!-- entrada blog 2 -->
+            <article class="entrada-blog">
+                <picture>
+                    <source loading="lazy" srcset="/assets/img/blog2.webp" type="image/webp">
+                    <img class="nuestro-blog_img max-width-100 border-radius" loading="lazy" src="/assets/img/blog2.jpg" alt="imagen blog">
+                </picture>
+                <div class="entrada-contenido" >
+                    <h3>Tipos de granos de cafe</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo commodi 
+                        blanditiis deleniti non recusandae, ullam optio rerum, libero, possimus 
+                        quia veritatis officiis deserunt dignissimos. Sapiente facere quaerat 
+                        exercitationem unde ducimus!</p>
+                        <a href="entrada.html" class="boton boton-primario">Leer Entrada</a>
+                </div>
+            </article>
+            <!-- entrada blog 3 -->
+            <article class="entrada-blog">
+                <picture>
+                    <source loading="lazy" srcset="/assets/img/blog3.webp" type="image/webp">
+                    <img class="nuestro-blog_img max-width-100 border-radius" loading="lazy" src="/assets/img/blog3.jpg" alt="imagen blog">
+                </picture>
+                <div class="entrada-contenido" >
+                    <h3>Tipos de granos de cafe</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo commodi 
+                        blanditiis deleniti non recusandae, ullam optio rerum, libero, possimus 
+                        quia veritatis officiis deserunt dignissimos. Sapiente facere quaerat 
+                        exercitationem unde ducimus!</p>
+                        <a href="entrada.html" class="boton boton-primario">Leer Entrada</a>
+                </div>
+            </article>
+        
+        </main><!-- main blog -->
+        <aside class="sidevar">
+            <h3>Nuestros Cursos y Talleres</h3>
+            <ul class="cursos no-padding">
+                <li class="cursos-info">
+                    <h4>Técnicas de Extracción de Café</h4>
+                    <p class="widget-curso_label">Precio:<span class="info-precio"> Gratis</span></p>
+                    <p class="widget-curso_label">Cupo:<span class="info-cupo"> 20€</span></p>
+                    <a href="cursos.html" class="boton boton-secundario">Más información sobre nuestros cursos</a>
+                </li>
+                <li class="cursos-info">
+                    <h4>4 Recetas de Café para Principiantes</h4>
+                    <p class="widget-curso_label">Precio:<span class="info-precio"> Gratis</span></p>
+                    <p class="widget-curso_label">Cupo:<span class="info-cupo"> 20€</span></p>
+                    <a href="cursos.html" class="boton boton-secundario">Más información sobre nuestros cursos</a>
+                </li>
+                </li>
+            </ul>
+
+        </aside><!-- sidevar -->
+        
+    </div><!-- contenedor -->
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="entrada.html">
+                    <h1 class="logo no-margin no-padding centrar-texto scale transition">Blog<span class="span-logo">DeCafé</span></h1>
+                </a>
+                <nav class="navbar">
+                    <a class="scalex1 transition" href="index.html">Inicio</a>
+                    <a class="scalex1 transition" href="nosotros.html">Nosotros</a>
+                    <a class="scalex1 transition" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>    
+    </footer>
+</body>
+</html>
